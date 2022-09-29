@@ -1,0 +1,2 @@
+javac psvm.java 
+pause
