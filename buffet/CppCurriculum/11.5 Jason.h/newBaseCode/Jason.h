@@ -9,6 +9,7 @@
 #include <conio.h>
 #include <sstream>
 #include <fstream>
+#include <math.h>
 
 using namespace std;
 void gotoxy(short x, short y) {
@@ -48,20 +49,20 @@ void drawbox(char symbol, int xcoord, int ycoord, int width, int height){ //draw
 void framedbox(char symbol, int xcoord, int ycoord, int width, int height){ //draws a framed box
 	drawlineH(symbol, xcoord, ycoord, width);
 	cout<<endl;
-	for(int i = 0; i < height - 1; i++){
+	for(int i = 0; i < height - 2; i++){
 		gotoxy(xcoord, ycoord + i + 1);
 		cout<<symbol;
 		gotoxy(xcoord + width - 1, ycoord + i + 1);
 		cout<<symbol;
 		cout<<endl;
 	}
-	drawlineH(symbol, xcoord, ycoord + height, width);
+	drawlineH(symbol, xcoord, ycoord + height - 1, width);
 }
 void triangle(char symbol, int xcoord, int ycoord, int height){ // draws a filled triangle
 	gotoxy(xcoord, ycoord);
 	cout<<symbol;
 	cout<<endl;
-	for(int i = 0; i < height; i++){
+	for(int i = 0; i < height - 1; i++){
 		drawlineH(symbol, xcoord - i - 1, ycoord + i + 1, 2*i + 3);
 		cout<<endl;
 	}
@@ -70,13 +71,13 @@ void framedtriangle(char symbol, int xcoord, int ycoord, int height){ //draws a 
 	gotoxy(xcoord, ycoord);
 	cout<<symbol;
 	cout<<endl;
-	for(int i = 0; i < height; i++){
+	for(int i = 0; i < height - 1; i++){
 		gotoxy(xcoord - i - 1, ycoord + i + 1);
 		cout<<symbol<<endl;
 		gotoxy(xcoord + i + 1, ycoord + i + 1);
 		cout<<symbol<<endl;
 	}
-	drawlineH(symbol, xcoord - height, ycoord + height, height*2);
+	drawlineH(symbol, xcoord - height + 1, ycoord + height - 1, height*2 - 1);
 }
 int pow(int x, int y){ //returns first number to the power of second number
 	int saved = x;
@@ -109,7 +110,7 @@ int abs(int x){ //returns the absolute value of a given number
 int random(int r)
 {
     return rand()% r + 1;
-}  
+}
+  
 #endif
-
 
