@@ -10,6 +10,7 @@
 #include <sstream>
 #include <fstream>
 #include <math.h>
+#include <iomanip>
 
 using namespace std;
 void gotoxy(short x, short y) {
