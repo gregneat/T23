@@ -16,7 +16,7 @@ Platform assembly: C:\Users\gneat\Desktop\T23\buffet\UnityCurriculum\20. Flappy 
 Loading C:\Users\gneat\Desktop\T23\buffet\UnityCurriculum\20. Flappy Bird - Example\Crappybirdbuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\gneat\Desktop\T23\buffet\UnityCurriculum\20. Flappy Bird - Example\Crappybirdbuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\gneat\Desktop\T23\buffet\UnityCurriculum\20. Flappy Bird - Example\Crappybirdbuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.103 seconds
+- Completed reload, in  0.108 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
